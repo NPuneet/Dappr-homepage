@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+.container {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #6f6af7;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1%;
+  position: fixed;
+  top: 0;
+}
+.arrow img {
+  padding-bottom: 5px;
+}
+.logo {
+  font-family: "Delius Unicase", cursive;
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+.input input {
+  height: 3.5rem;
+  margin-left: 5rem;
+  border-radius: 3.5rem;
+  font-size: 1.4rem;
+  background-color: white;
+  background-image: url("search.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 17rem center;
+  padding-left: 1.3rem;
+  padding-right: 10px;
+  font-weight: 400;
+}
+.input input::placeholder {
+  font-size: 1.2rem;
+}
+ul {
+  display: flex;
+  gap: 5rem;
+  font-size: 2rem;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+.bodytext {
+  background-color: #e5d8ff;
+  border-radius: 1.2rem;
+  width: 54vw;
+  height: 51vh
+}
+.bodytext p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;      
+  font-weight: 400;
+  color: #6f7373;
+  letter-spacing: 4px;
+  line-height: 3rem;
+  padding: 2.5rem 0rem;
+  padding-left: 3rem;
+}
+.body {
+  height: calc(185vh - 120px);
+  width: 100%;
+}
+.topbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: start;
+  margin-top: 14rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.code {
+  margin: 0% 3% 0% 8.3%;
+}
+.code img {
+  height: 52vh;
+  width: 24.5vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 9px 31px 0px;
+  border-radius: 1.2rem;
+}
+.midbody {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 9rem;
+  margin-left: 6rem;
+  justify-content: center;
+}
+.midbody div {
+  margin: 3% 0;
+  width: 18vw;
+  height: 12vh;
+  border-radius: 11px;
+}
+.box1 {
+  background-color: #929dff;
+  color: #ffffff;
+  padding-top: 1rem;
+  line-height: 3.4rem;
+  padding-left: 1.2rem;
+  box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+}
+.box2 {
+  background-color: #734cf2;
+  color: #ffffff;
+  padding-top: 1rem;
+  line-height: 3.4rem;
+  padding-left: 1.2rem;
+  box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+}
+.box3 {
+  background-color: #d288ff;
+  padding-top: 1rem;
+  line-height: 3.4rem;
+  padding-left: 1.2rem;
+  box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+}
+.box4 {
+  background-color: #000;
+  color: #ffffff;
+  padding-top: 1rem;
+  line-height: 3.4rem;
+  padding-left: 1.2rem;
+  box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+}
+.midbody p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  padding-left: 1rem;
+}
+.chathelp img {
+  position: fixed;
+  bottom: 0px;  
+  right: 9rem;
+  z-index: 10;
+  height: 10rem;
+}
+.footer {
+  height: 66vh;
+  width: 84%;
+  display: flex;
+  background-color: #483eff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-left: 8%;
+  border-radius: 2.2rem;
+}
+.left {
+  display: flex;
+  height: 60vh;
+  width: 25vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #483eff;
+}
+.right {
+  width: 53vw;
+  height: 60vh;
+  color: #000;
+  background-color: #fff;
+  padding-left: 2rem;
+  border-radius: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.right h2 {
+  padding-top: 7%;
+  padding-left: 1.6rem;
+  font-size: 3rem;
+  font-family: "inter";
+  padding-bottom: 3.2rem;
+  font-weight: 700;
+}
+.right p {
+  padding-left: 4rem;
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+.left button {
+  height: 11vh;
+  width: 20vw;
+  border-radius: 1.2rem;
+  letter-spacing: 3px;
+  font-family: "DM Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(255, 255, 255);
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  background-color: rgb(72, 62, 255);
+}
+#button1 {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.6rem;
+  background-color: #bce0f6;
+  border: none;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+}
+.right button {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.3rem;
+  height: 6vh;
+  width: 10rem;
+  padding-right: 3rem;
+  border-radius: 9px;
+  background-image: url("Arrow\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: 27px;
+  background-position: 6rem center;
+  position: relative;
+  left: 56.5rem;
+  top: 3rem;
+}
+.socialicon {
+  height: 4vh;
+  width: 5vw;
+  float: inline-end;
+  margin-top: 4rem; 
+  position: sticky;
+  top: 8rem;
+}
+.socialicon .whatsapp {
+  border: 3.9px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
