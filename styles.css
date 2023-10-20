@@ -3,16 +3,16 @@
   padding: 0;
 }
 html,
-.container {
+body {
   height: 100%;
   width: 100%;
 }
 .navbar {
   display: flex;
-  height: 120px;
+  height: 5rem;
   width: 100%;
   background-color: #6f6af7;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-family: "DM Sans", sans-serif;
@@ -22,77 +22,86 @@ html,
   top: 0;
 }
 .arrow img {
-  padding-bottom: 5px;
+  padding-bottom: 2.5px;
+  width: 0.6rem;
 }
 .logo {
   font-family: "Delius Unicase", cursive;
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 2.9rem;
+  margin-left: 3.5rem;
+  padding-bottom: 7px;
+}
+.ham img {
+  margin-right: 3.4rem;
+  height: 1.8rem;
 }
 
 .input input {
-  height: 3.5rem;
-  margin-left: 5rem;
+  height: 5vh;
+  width: 15vw;
   border-radius: 3.5rem;
-  font-size: 1.4rem;
   background-color: white;
   background-image: url("search.svg");
-  background-size: 20px;
+  background-size: 18px;
   background-repeat: no-repeat;
-  background-position: 17rem center;
-  padding-left: 1.3rem;
-  padding-right: 10px;
+  background-position: 93% center;
   font-weight: 400;
 }
 .input input::placeholder {
-  font-size: 1.2rem;
+  padding-left: 1.1rem;
+  padding-top: .5rem;
+  font-weight: 400;
+  font-size: .9rem;
+  color: #9f9f9f;
 }
 ul {
   display: flex;
-  gap: 5rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  gap: 4rem;
+  margin-left: 3rem;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 li {
   list-style: none;
 }
-.bodytext {
-  background-color: #e5d8ff;
+.bodytext textarea{
+  background-color: rgb(229, 216, 255);
   border-radius: 1.2rem;
-  width: 54vw;
-  height: 51vh
+  width: 96%;
+  height: 46.5vh;
+  margin-left: 2rem;
 }
-.bodytext p {
+.bodytext textarea::placeholder  {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.6rem;      
+  font-size: 1.15rem;
   font-weight: 400;
   color: #6f7373;
-  letter-spacing: 4px;
-  line-height: 3rem;
+  letter-spacing: 1.8px;
+  line-height: 2.4rem;
   padding: 2.5rem 0rem;
   padding-left: 3rem;
 }
 .body {
-  height: calc(185vh - 120px);
+  height: 180vh;
   width: 100%;
 }
 .topbody {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: start;
-  margin-top: 14rem;
+  flex-flow: wrap;
+  place-content: space-around start;
+  margin-top: 12%;
   gap: 1rem;
-  margin-bottom: 1rem;
-}
-.code {
-  margin: 0% 3% 0% 8.3%;
+  margin-bottom: 2rem;
 }
 .code img {
-  height: 52vh;
-  width: 24.5vw;
+  /* height: 113%; */
+  width: 68%;
+  margin-left: 30%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 9px 31px 0px;
+  object-fit: fill;
   border-radius: 1.2rem;
 }
 .midbody {
@@ -100,15 +109,15 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 7rem;
   align-items: center;
-  margin-bottom: 9rem;
+  margin-bottom: 12rem;
   margin-left: 6rem;
   justify-content: center;
 }
 .midbody div {
   margin: 3% 0;
-  width: 18vw;
+  width: 14vw;
   height: 12vh;
   border-radius: 11px;
 }
@@ -116,7 +125,7 @@ li {
   background-color: #929dff;
   color: #ffffff;
   padding-top: 1rem;
-  line-height: 3.4rem;
+  line-height: 2.5rem;
   padding-left: 1.2rem;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
 }
@@ -124,14 +133,14 @@ li {
   background-color: #734cf2;
   color: #ffffff;
   padding-top: 1rem;
-  line-height: 3.4rem;
+  line-height: 2.5rem;
   padding-left: 1.2rem;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
 }
 .box3 {
   background-color: #d288ff;
   padding-top: 1rem;
-  line-height: 3.4rem;
+  line-height: 2.5rem;
   padding-left: 1.2rem;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
 }
@@ -139,115 +148,120 @@ li {
   background-color: #000;
   color: #ffffff;
   padding-top: 1rem;
-  line-height: 3.4rem;
+  line-height: 2.5rem;
   padding-left: 1.2rem;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
 }
 .midbody p {
   color: #fff;
   font-family: "DM Sans", sans-serif;
-  font-size: 1.7rem;
-  letter-spacing: 2px;
-  padding-left: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1.9px;
+  padding-left: 0.5rem;
 }
 .chathelp img {
   position: fixed;
-  bottom: 0px;  
-  right: 9rem;
+  bottom: 0px;
+  right: 4.5%;
   z-index: 10;
-  height: 10rem;
+  height: 8rem;
 }
 .footer {
-  height: 66vh;
-  width: 84%;
+  height: 72vh;
+  width: 85%;
   display: flex;
   background-color: #483eff;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
-  margin-left: 8%;
-  border-radius: 2.2rem;
+  margin-left: 9.5%;
+  border-radius: 1.2rem;
 }
-.left {
+.left {         
   display: flex;
-  height: 60vh;
+  height: 66vh;
   width: 25vw;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #483eff;
 }
 .right {
   width: 53vw;
-  height: 60vh;
+  height: 66vh;
   color: #000;
   background-color: #fff;
   padding-left: 2rem;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   font-family: "Roboto", sans-serif;
 }
 .right h2 {
   padding-top: 7%;
   padding-left: 1.6rem;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: "inter";
-  padding-bottom: 3.2rem;
+  padding-bottom: 2.1rem;
   font-weight: 700;
+  color: #04285a;
 }
 .right p {
   padding-left: 4rem;
-  font-size: 1.8rem;
-  margin-bottom: 2.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+.right p b {
+  color: #04285a;
 }
 .left button {
-  height: 11vh;
-  width: 20vw;
+  height: 12.5vh;
+  width: 19vw;
   border-radius: 1.2rem;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   font-family: "DM Sans", sans-serif;
   color: rgb(255, 255, 255);
-  border: 5px solid rgb(255, 255, 255);
-  font-size: 1.6rem;
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 1.34rem;
+  font-weight: 600;
   line-height: 1.5rem;
   background-color: rgb(72, 62, 255);
 }
-#button1 {
-  font-weight: 700;
+.left .button1 {
   color: #000;
-  font-size: 1.6rem;
   background-color: #bce0f6;
+  font-weight: 900;
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
   border: none;
-  letter-spacing: 3px;
-  line-height: 1.5rem;
 }
 .right button {
   background-color: #000;
   color: #ffffff;
   font-size: 1.3rem;
   height: 6vh;
-  width: 10rem;
+  width: 9.5rem;
   padding-right: 3rem;
-  border-radius: 9px;
+  border-radius: 7px;
   background-image: url("Arrow\ 1.svg");
   background-repeat: no-repeat;
   background-size: 27px;
-  background-position: 6rem center;
+  background-position: 5.8rem center;
   position: relative;
-  left: 56.5rem;
-  top: 3rem;
+  left: 77%;
+  top: 21.5%;
 }
 .socialicon {
-  height: 4vh;
-  width: 5vw;
+  width: 5%;
   float: inline-end;
-  margin-top: 4rem; 
+  margin-top: 2.5rem;
   position: sticky;
-  top: 8rem;
+  top: 13%;
+}
+.socialicon img {
+  height: 4rem;
 }
 .socialicon .whatsapp {
-  border: 3.9px solid black;
+  border: 3.1px solid black;
   padding: 5px;
   border-radius: 10px;
-  
+  height: 3.1rem;
 }
