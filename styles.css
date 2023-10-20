@@ -50,9 +50,9 @@ body {
 }
 .input input::placeholder {
   padding-left: 1.1rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #9f9f9f;
 }
 ul {
@@ -67,14 +67,14 @@ ul {
 li {
   list-style: none;
 }
-.bodytext textarea{
+.bodytext textarea {
   background-color: rgb(229, 216, 255);
   border-radius: 1.2rem;
-  width: 96%;
+  width: 55vw;
   height: 46.5vh;
-  margin-left: 2rem;
+  margin-left: 1%;
 }
-.bodytext textarea::placeholder  {
+.bodytext textarea::placeholder {
   font-family: "DM Sans", sans-serif;
   font-size: 1.15rem;
   font-weight: 400;
@@ -93,12 +93,16 @@ li {
   flex-flow: wrap;
   place-content: space-around start;
   margin-top: 12%;
-  gap: 1rem;
+  gap: 9rem;
   margin-bottom: 2rem;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .code img {
-  /* height: 113%; */
-  width: 68%;
+  height: 47vh;
+  width: 20vw;
   margin-left: 30%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 9px 31px 0px;
   object-fit: fill;
@@ -178,7 +182,7 @@ li {
   margin-left: 9.5%;
   border-radius: 1.2rem;
 }
-.left {         
+.left {
   display: flex;
   height: 66vh;
   width: 25vw;
@@ -234,20 +238,20 @@ li {
   border: none;
 }
 .right button {
-  background-color: #000;
-  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
   height: 6vh;
   width: 9.5rem;
   padding-right: 3rem;
   border-radius: 7px;
-  background-image: url("Arrow\ 1.svg");
+  background-image: url("Arrow 1.svg");
   background-repeat: no-repeat;
   background-size: 27px;
   background-position: 5.8rem center;
   position: relative;
-  left: 77%;
-  top: 21.5%;
+  left: 40.5vw;
+  top: 15vh;
 }
 .socialicon {
   width: 5%;
